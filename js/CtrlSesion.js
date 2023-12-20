@@ -10,7 +10,7 @@ import {
 } from "./seguridad.js";
 import { 
   asignarRolCliente 
-} from "./asignarRolCliente.js";
+} from "./asignarRol.js";
 
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
