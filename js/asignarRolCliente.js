@@ -22,7 +22,7 @@ export async function asignarRolAdmin(userId) {
   const daoUsuario = firestore.collection("Usuario");
 
   const usuarioData = {
-    rolIds: ["Administrador"]
+    rolIds: ["Administrador", "Cliente"]
   };
 
   try {
