@@ -53,13 +53,13 @@ async function
     forma.terminarSesión.
       addEventListener(
         "click", terminaSesión);
+    // Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
+    const userId = usuario.email;
+    // Asigna el rol de "Cliente" al usuario
+    asignarRolCliente(userId);
   } else {
     // No ha iniciado sesión.
     iniciaSesión();
   }
 }
-// Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
-const userId = usuario.email;
 
-// Asigna el rol de "Cliente" al usuario
-asignarRolCliente(userId);
