@@ -11,6 +11,9 @@ import {
 import { 
   asignarRolCliente 
 } from "./asignarRolCliente.js";
+import { 
+  asignarRolAdmin 
+} from "./asignarRolCliente.js";
 
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
