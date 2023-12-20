@@ -45,17 +45,16 @@ getAuth().onAuthStateChanged(
 async function
   muestraSesión(usuario) {
   if (usuario && usuario.email) {
-    if (usuario.email == 'rom.gok2@gmail.com') {
-      const userId = usuario.email;
-      // Asigna el rol de "Cliente" al usuario
-      asignarRolAdmin(userId);
-    } else {
+    if (usuario.email == 'forms5nv50@gmail.com') {
       // Usuario aceptado.
+      const userId = usuario.email;
+      // Asigna el rol de "Admin" al usuario
+      asignarRolAdmin(userId);
+    }
       // Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
       const userId = usuario.email;
       // Asigna el rol de "Cliente" al usuario
       asignarRolCliente(userId);
-    }
     forma.email.value =
       usuario.email || "";
     forma.nombre.value =
