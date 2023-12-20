@@ -45,7 +45,7 @@ getAuth().onAuthStateChanged(
 async function
   muestraSesión(usuario) {
   if (usuario && usuario.email) {
-    if (usuario.email == 'rom.gok2@gmail.com'{
+    if (usuario.email == 'rom.gok2@gmail.com') {
       const userId = usuario.email;
       // Asigna el rol de "Cliente" al usuario
       asignarRolAdmin(userId);
