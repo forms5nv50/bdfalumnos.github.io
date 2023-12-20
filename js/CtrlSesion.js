@@ -8,6 +8,9 @@ import {
   iniciaSesión,
   terminaSesión
 } from "./seguridad.js";
+import { 
+  asignarRolCliente 
+} from "./asignarRolCliente.js";
 
 /** @type {HTMLFormElement} */
 const forma = document["forma"];
@@ -55,3 +58,8 @@ async function
     iniciaSesión();
   }
 }
+// Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
+const userId = usuario.email;
+
+// Asigna el rol de "Cliente" al usuario
+asignarRolCliente(userId);
