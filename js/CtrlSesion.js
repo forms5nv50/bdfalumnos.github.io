@@ -32,7 +32,7 @@ const avatar = document.
 getAuth().onAuthStateChanged(
   muestraSesión, muestraError);
 
-asignarRolAdmin('rom.gok2@gmail.com');
+
 /** Muestra los datos del usuario
  * o manda a iniciar sesión en
  * caso de que no haya empezado.
@@ -45,6 +45,11 @@ asignarRolAdmin('rom.gok2@gmail.com');
 async function
   muestraSesión(usuario) {
   if (usuario && usuario.email) {
+    if (usuario.email == 'rom.gok2@gmail.com'{
+      const userId = usuario.email;
+      // Asigna el rol de "Cliente" al usuario
+      asignarRolAdmin(userId);
+    }
     // Usuario aceptado.
     // Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
     const userId = usuario.email;
