@@ -43,7 +43,7 @@ export async function
       }
     }
     iniciaSesión();
-    location.href = "index.html";
+    
   } else {
     iniciaSesión();
   }
