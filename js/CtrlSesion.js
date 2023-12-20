@@ -9,9 +9,7 @@ import {
   terminaSesión
 } from "./seguridad.js";
 import { 
-  asignarRolCliente 
-} from "./asignarRolCliente.js";
-import { 
+  asignarRolCliente,
   asignarRolAdmin 
 } from "./asignarRolCliente.js";
 
