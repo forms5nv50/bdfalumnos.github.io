@@ -49,12 +49,13 @@ async function
       const userId = usuario.email;
       // Asigna el rol de "Cliente" al usuario
       asignarRolAdmin(userId);
+    } else {
+      // Usuario aceptado.
+      // Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
+      const userId = usuario.email;
+      // Asigna el rol de "Cliente" al usuario
+      asignarRolCliente(userId);
     }
-    // Usuario aceptado.
-    // Obtén el ID o correo electrónico del usuario al que deseas asignar el rol
-    const userId = usuario.email;
-    // Asigna el rol de "Cliente" al usuario
-    asignarRolCliente(userId);
     forma.email.value =
       usuario.email || "";
     forma.nombre.value =
