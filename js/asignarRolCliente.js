@@ -27,8 +27,8 @@ export async function asignarRolAdmin(userId) {
 
   try {
     await daoUsuario.doc(userId).set(usuarioData);
-    console.log("Rol de Cliente asignado correctamente al usuario:", userId);
+    console.log("Rol de Administrador asignado correctamente al usuario:", userId);
   } catch (error) {
-    console.error("Error al asignar el rol de Cliente al usuario:", error);
+    console.error("Error al asignar el rol de Administrador al usuario:", error);
   }
 }
