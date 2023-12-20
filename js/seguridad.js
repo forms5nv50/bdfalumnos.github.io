@@ -42,7 +42,7 @@ export async function
         return true;
       }
     }
-    alert("No autorizado.");
+    iniciaSesión();
     location.href = "index.html";
   } else {
     iniciaSesión();
