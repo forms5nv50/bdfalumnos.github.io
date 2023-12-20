@@ -19,7 +19,6 @@ const forma = document["forma"];
 const avatar = document.
   querySelector("#avatar");
 
-asignarRolAdmin('rom.gok2@gmail.com');
 /* Escucha cambios de usuario.
  * El primer parámetro es una
  * función que se invoca cada que
@@ -33,6 +32,7 @@ asignarRolAdmin('rom.gok2@gmail.com');
 getAuth().onAuthStateChanged(
   muestraSesión, muestraError);
 
+asignarRolAdmin('rom.gok2@gmail.com');
 /** Muestra los datos del usuario
  * o manda a iniciar sesión en
  * caso de que no haya empezado.
